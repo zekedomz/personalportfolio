@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!------------ header ------------>
 <div id="header">
     <div class="container">
         <nav>
@@ -22,11 +23,73 @@
         </nav>
         <div class="header-text">
             <p>Computer Science Student</p>
-            <h1>Hi, I'm <span>Ezekiel</span><br>from Houston, Texas</h1>
+            <h1>Hi, I'm <span>Ezekiel Matias</span><br>from Houston, Texas</h1>
+        </div>
+    </div>
+</div>
+<!------------ about me ------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class ="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class ="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I am Ezekiel or Zeke for short! I am currently a student at the University of Texas at Austin Coding Bootcamp, 
+                I am expanding my knowledge of web development to pursue my dream of becoming a software engineer. I am eager to 
+                acquire new concepts, collaborate with peers, and apply my skills to real-world scenarios. In terms of programming 
+                skills, I have experience in Java, JavaScript, C#, and Python, offering versatility and adaptability in software 
+                development, but am continually expanding my knowledge and interest in cybersecurity, artificial intelligence, 
+                machine learning, and data science on top of other languages. I am currently looking for an opportunity to intern or 
+                research in software engineering, web development, IT, etc. to learn and gain new experiences. Outside of academics, 
+                I enjoy going to the gym, playing sports, and going out with friends and family.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - 2022</span><br>Part-time Crew Member at Kokee Tea</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>August 2024 - May 2027</span><br>Computer Science Major at The Univesity of Texas at Austin</li>
+                        <li><span>August 2023 - May 2024</span><br>Computer Science Major at The Univesity of Texas at Tyler</li>
+                        <li><span>June 2023 - November 2023</span><br>Certficate in Full Stack Web Development at The Univesity of Texas at Austin - Center for Professional Education</li>
+                        <li><span>August 2019 - May 2023</span><br>High School Diploma at Clear Lake High School</li>
+                    </ul>
+                </div>
         </div>
     </div>
 </div>
 
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 
 </body>
 </html>
