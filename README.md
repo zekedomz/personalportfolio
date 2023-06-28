@@ -1,7 +1,9 @@
 # zekes-portfolio-website
 
-## Project Links
+## Repository Link
 Repository Link: https://github.com/zekedomz/zekes-portfolio-website
+
+## Deployed Application Link
 Deployed Application Link: https://zekedomz.github.io/zekes-portfolio-website/
 
 ## Project Screenshot
@@ -36,10 +38,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ## Installation
 
 Clone the code from the main Github remote repository to your local repository.
-
-## Usage
-
-
 
 ## Credits
 
