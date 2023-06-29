@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <META http-equiv="X-UA-Compatible" content="IE-edge">
+    <META http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zekes Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
@@ -14,17 +14,19 @@
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
+                <i class="fa fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Computer Science Student</p>
-            <h1>Hi, I'm <span>Ezekiel Matias</span><br>from Houston, Texas</h1>
+            <h1>Hi, I'm Ezekiel Matias<br>from Houston, Texas</h1>
         </div>
     </div>
 </div>
@@ -37,13 +39,13 @@
             </div>
             <div class ="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Hi, I am Ezekiel or Zeke for short! I am currently a student at the University of Texas at Austin Coding Bootcamp, 
+                <p>Hi, I am Ezekiel, or Zeke for short! I am currently a student at the University of Texas at Austin Coding Bootcamp, 
                 I am expanding my knowledge of web development to pursue my dream of becoming a software engineer. I am eager to 
                 acquire new concepts, collaborate with peers, and apply my skills to real-world scenarios. In terms of programming 
                 skills, I have experience in Java, JavaScript, C#, and Python, offering versatility and adaptability in software 
                 development, but am continually expanding my knowledge and interest in cybersecurity, artificial intelligence, 
-                machine learning, and data science on top of other languages. I am currently looking for an opportunity to intern or 
-                research in software engineering, web development, IT, etc. to learn and gain new experiences. Outside of academics, 
+                machine learning, and data science on top of other languages. I am looking for an opportunity to intern or 
+                research in software engineering, web development, and IT to learn and gain new experiences. Outside of academics, 
                 I enjoy going to the gym, playing sports, and going out with friends and family.</p>
 
                 <div class="tab-titles">
@@ -177,7 +179,7 @@
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fas fa-paper-plane"></i> matiasezekield@gmail.com</p>
-                <p><i class="fas fa-phone-square-alt"></i> (832)915-6678</p>
+                <p><i class="fas fa-phone-square-alt"></i> (832) 915-6678</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/ezekieldominickmatias/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://twitter.com/zekecodes"><i class="fa-brands fa-twitter-square"></i></a>
@@ -191,7 +193,7 @@
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">submit</button>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
         </div>
@@ -217,6 +219,19 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
     }
 
 </script>
