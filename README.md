@@ -47,4 +47,6 @@ https://getwallpapers.com/collection/houston-skyline-wallpaper
 
 Logo made with https://www.canva.com/
 
+Image Credit for "Coming soon!" part of the portfolio section: https://www.pexels.com/
+
 Tutorial by https://www.youtube.com/watch?v=0YFrGy_mzjY
