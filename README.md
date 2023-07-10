@@ -7,7 +7,7 @@ Repository Link: https://github.com/zekedomz/zekes-portfolio-website
 Deployed Application Link: https://zekedomz.github.io/zekes-portfolio-website/
 
 ## Project Screenshot
-![Deployed Application Screenshot](https://raw.githubusercontent.com/zekedomz/zekes-portfolio-website/main/images/deployed-application.png)
+![Deployed Application Screenshot](https://raw.githubusercontent.com/zekedomz/zekes-portfolio-website/main/assets/images/deployed-application.png)
 ## Description
 
 My portfolio of work showcases my skills and talents to employers looking to fill a part-time or full-time position. Thus far, my portfolio highlights my strongest work as well as the thought processes behind it. Why I built the portfolio is because typically students who have portfolios with deployed web applications are typically very successful in their career search after the boot camp. The problem I solved was using advanced CSS to add style to my current website What I learned was how to apply flexbox, media queries, and CSS variables.
