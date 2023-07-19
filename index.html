@@ -134,33 +134,33 @@
                 </div>
             </div>
             <div class="portfolio">
-                <img src="assets/images/work-2.png">
+                <img src="assets/images/blinkcustoms-desktop.png">
                 <div class="layer">
-                    <h3>Coming soon!</h3>
-                    <p>Working on new projects!</p>
-                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                    <h3>Blink Customs</h3>
+                    <p>Website for Blink Customs</p>
+                    <a href="https://zekedomz.github.io/blinkcustoms/"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
         <div class="portfolio-row2">
                 <div class="portfolio">
-                <img src="images/work-2.png">
+                <img src="assets/images/pw-gen.png">
                 <div class="layer">
-                    <h3>Coming soon!</h3>
-                    <p>Working on new projects!</p>
-                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                    <h3>Password Generator</h3>
+                    <p>Generate your own password!</p>
+                    <a href="https://zekedomz.github.io/random-pw-gen/"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="portfolio">
-                <img src="images/work-2.png">
+                <img src="assets/images/coding-quiz.png">
                 <div class="layer">
-                    <h3>Coming soon!</h3>
-                    <p>Working on new projects!</p>
-                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                    <h3>Coding Quiz</h3>
+                    <p>Quiz yourself about coding!</p>
+                    <a href="https://zekedomz.github.io/coding-quiz/"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="portfolio">
-                <img src="images/work-2.png">
+                <img src="assets/images/work-2.png">
                 <div class="layer">
                     <h3>Coming soon!</h3>
                     <p>Working on new projects!</p>
@@ -234,6 +234,17 @@
         sidemeu.style.right = "-200px";
     }
 
+</script>
+
+<script>
+    var showMoreBtn = document.querySelector('.btn');
+    var portfolioRow2 = document.querySelector('.portfolio-row2');
+
+    showMoreBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        portfolioRow2.style.display = 'grid';
+        this.style.display = 'none';
+    });
 </script>
 
 </body>
